@@ -1,7 +1,7 @@
 {"1.1.0",
 [{<<"cluster">>,
   {git,"https://github.com/hbcrhythm/cluster.git",
-       {ref,"99ef4b979b512f8e592e9dab1eb226e248ce2951"}},
+       {ref,"b1b49216e11ec674acd39c1dc997deaeafe1f3ea"}},
   0},
  {<<"goldrush">>,{pkg,<<"goldrush">>,<<"0.1.9">>},2},
  {<<"lager">>,

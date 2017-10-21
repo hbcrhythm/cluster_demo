@@ -7,6 +7,7 @@ transpond(GateSrvId, SessionId, Msg) ->
 	{ok, SessionList} = application:get_env(demo, session_list),
 	case lists:member(SessionId, SessionList) of
 		true ->
+			random:seed(os:timestamp()),
 			cluster_stdlib:cast(logic, logic_handler, handle, [GateSrvId, SrvId, SessionId, Msg]),
 			lager:info("##connector## :: transpond finished");
 		false ->

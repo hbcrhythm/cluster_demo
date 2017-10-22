@@ -11,4 +11,5 @@ Build
 Start
 -----
 
-	script Directory to run start bat
+	under Directory script to run start bat
+	call test:login() and test:send() at gate node to test
